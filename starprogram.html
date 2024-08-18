@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    // program1
+        // for(i=1;i<=4;i++){
+        //     for(j=1;j<=i;j++)
+        //     {
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+
+    // program2
+
+        // for(i=5;i>=1;i--){
+        //     for(j=1;j<=i;j++)
+        //     {
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+
+        // program3
+       
+        // const rows = 4;
+
+// Loop through each row
+// for (let i = 1; i <= rows; i++) {
+//     let pattern = '';
+
+//     // Print numbers from 1 to i for each row
+//     for (let j = 1; j <= i; j++) {
+//         pattern += j + ' ';
+//     }
+
+//     // Output the pattern for each row
+//     console.log(pattern);
+
+// }
+// program
+// for(i=6;i>1;i--){
+//     document.write("*")
+//     document.write("<br>")
+// }
+// program
+const n = 10;
+        let output = '';
+
+        // Loop through each row
+        for (let i = 0; i < n; i++) {
+            // Loop through each column in the row
+            for (let j = 0; j < n; j++) {
+                // Print a star (*) if it's on the diagonal, otherwise print a space
+                if (i === j) {
+                    output += '*';
+                } else {
+                    output += ' ';
+                }
+            }
+            // Move to the next line after each row
+            output += '\n';
+        }
+        document.write(output)
+
+</script>
+</body>
+</html>

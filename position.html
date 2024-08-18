@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [10, 20, 30, 40];
+        let position = parseInt(prompt("Enter the number to find its position:"));
+
+        // Check if the number exists in the array
+        // let index = arr.indexOf(position);
+
+        // if (index !== -1) {
+        //     // index + 1 gives the 1-based position
+        //     document.write(`The position of the number is: ${index + 1}`);
+        // } else {
+        //     document.write("Number not found in the array.");
+        // }
+        let pos = 1
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == position) {
+                pos = i + 1
+                document.write(pos)
+            }
+           
+        }
+       if(i !==-1){
+        document.write("the position of element is" ,pos)
+       }else{
+        document.write("element no found")
+       }
+    </script>
+</body>
+
+</html>

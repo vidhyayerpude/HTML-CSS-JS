@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function findPrice(food) {
+            switch (food.toLowerCase()) {
+                case "burger":
+                    console.log(`Burger: $9.99`);
+                    break;
+                case "pizza":
+                    console.log(`Pizza: $12.99`);
+                    break;
+                case "pasta":
+                    console.log(`Pasta: $8.99`);
+                    break;
+                default:
+                    console.log(`Sorry, ${food} is not on the menu.`);
+            }
+        }
+
+        let food = prompt("Enter the food name:");
+        findPrice(food);
+    </script>
+</body>
+
+</html>

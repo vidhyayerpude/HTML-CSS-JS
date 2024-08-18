@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: red;
+            height: 330px;
+            width: 333px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+    </div>
+    <button id="button">
+        on click
+    </button>
+    <script>
+        document.getElementById("button").addEventListener("click", cc);
+
+        function cc() {
+            var container = document.getElementById("container");
+            container.style.backgroundColor = container.style.backgroundColor === 'blue' ? 'red' : 'blue';
+        }
+    </script>
+</body>
+</html>

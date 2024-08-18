@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test{
+            background-color: rgb(189, 226, 43);
+            height: 250px;
+            width: 400px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error exercitationem necessitatibus repudiandae voluptas in nemo tempore voluptate accusamus maxime ipsum! Minima similique quod veniam reprehenderit, sunt, explicabo perspiciatis maiores exercitationem quasi nemo ducimus illo inventore sint cupiditate velit asperiores dolore.
+</p>
+    </div>
+    <script>
+
+
+//way of getting output easily via insertAdjacentElement
+
+var newElement=document.createElement("h2")
+var newText=document.createTextNode("This is just a test")
+newElement.appendChild(newText)
+
+var target=document.getElementById("test")
+// target.insertAdjacentElement("beforebegin",newElement)
+// target.insertAdjacentElement("beforeend",newElement)
+// target.insertAdjacentElement("afterbegin",newElement)
+ target.insertAdjacentElement("afterend",newElement)     
+
+
+
+
+//way of getting output easily via insertAdjacentHTML
+// var newtext="<h2> This is just a text </h2>"
+// var target=document.getElementById("test")
+// target.insertAdjacentHTML("beforebegin",newtext)
+// target.insertAdjacentHTML("beforeend",newtext)
+// target.insertAdjacentHTML("afterbegin",newtext)
+// target.insertAdjacentHTML("afterend",newtext)
+
+    </script>
+</body>
+</html>

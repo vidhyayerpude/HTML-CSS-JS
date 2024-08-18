@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parental HTML</title>
+</head>
+<style>
+    #outer{
+        background-color: orange;
+        height: 300px;
+    }
+    #inner{
+        background-color: blueviolet;
+        min-height: 200px;
+        margin: 30px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    ul li{
+        display: inline-block;
+        background-color: white;
+        padding: 30px;
+    }
+    a{
+        text-decoration: none;
+        color: black
+    }
+    
+</style>
+<body>
+    <div id="outer">
+        <h3>Outer</h3>
+        <div id="inner">
+            <h3>Inner</h3>
+            <ul class="name">
+                <li><a href="">A</a></li>
+                <li><a href="">B</a></li>
+                <li><a href="" id="child-c">C</a></li>
+                <li><a href="">D</a></li>
+                <li><a href="">E</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var a=document.getElementById("inner").parentElement
+        var a=document.body.parentElement;
+        document.getElementById("inner").parentElement.style.background="red";
+        document.getElementById("child-c").parentElement.style.background="red";
+        var a = document.getElementById("child-c").parentElement.style.background="red";
+        document.getElementById("child-c").parentElement.style.background="red";
+        document.getElementById("child-c").parentElement.style.background="red";
+        var a=document.getElementById("main").parentNode;
+        var a =document.getElementById("main").parentNode;
+        console.log(a);
+    </script>
+</body>
+</html>

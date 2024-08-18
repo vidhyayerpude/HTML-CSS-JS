@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+</head>
+<body>
+    <script>
+        // Prompt the user to enter marks for three subjects
+        let subject1 = parseFloat(prompt("Enter marks for subject 1:"));
+        let subject2 = parseFloat(prompt("Enter marks for subject 2:"));
+        let subject3 = parseFloat(prompt("Enter marks for subject 3:"));
+        
+        // Calculate the total and percentage
+        let total = subject1 + subject2 + subject3;
+        let percentage = (total / 300) * 100;  // Assuming each subject is out of 100 marks
+
+        // Display the results
+        document.write("Marks for Subject 1: " + subject1 + "<br>");
+        document.write("Marks for Subject 2: " + subject2 + "<br>");
+        document.write("Marks for Subject 3: " + subject3 + "<br>");
+        document.write("Total Marks: " + total + "<br>");
+        document.write("Percentage: " + percentage.toFixed(2) + "%");
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let s = parseInt(prompt("Enter the size"));
+        let arr1 = new Array(s);
+
+        for (let i = 0; i < arr1.length; i++) {
+            arr1[i] = parseInt(prompt(`Enter element at index ${i}`));
+        }
+        document.write(arr1 + "<br>");
+
+        // by using function
+        // let arr1;
+        // let size = function () {
+        //     let s = parseInt(prompt("Enter the size"));
+        //     arr1 = new Array(s);
+        // }
+
+        // let input = function () {
+        //     for (let i = 0; i < arr1.length; i++) {
+        //         arr1[i] = parseInt(prompt(`Enter element at index ${i}`));
+        //     }
+        //     document.write(arr1 + "<br>");
+        // }
+
+        // size();
+        // input();
+        //sum
+        let sum = 0
+        let pro = 1
+
+        for (i = 0; i < arr1.length; i++) {
+            sum = sum + arr1[i]
+        }
+        document.write(`sum=${sum}<br>`)
+        //product
+        for (let i = 0; i < arr1.length; i++) {
+            pro = pro * arr1[i]
+        }
+
+        document.write(`product=${pro}<br>`)
+
+        // second smallest element in array
+        // if (arr1.length < 2) {
+        //     document.write("Array must contain at least two element")
+
+        // }
+        // else {
+        //     arr1.sort((a, b) => a - b);
+        //     let secondSmallest = arr1[1];
+        //     document.write("the second smallest element is=" + secondSmallest);
+        // }
+ 
+
+        
+ </script>
+</body>
+
+</html>

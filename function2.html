@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  functionwith argument with return value
+    function with argument without return value 
+    function without argument with return value
+    function without argument without return value -->
+
+    <script>
+        let total = (eng, hind, mat) => {
+            let st = eng + hind + mat
+            return st
+        }
+        let sst = total(44, 44, 44)
+        document.write(`total scoring marks is subject  ${sst}<br>`)
+        let pert = (ttq) => {
+            let pert = ttq * 100 / 300
+            return pert
+        }
+        let pt=pert(sst)
+        document.write(`total percentage is  ${pt}`)
+    </script>
+</body>
+
+</html>

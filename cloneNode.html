@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        height: 200px;
+        border: 2px solid black;
+     padding: 10px;
+     background-color: gold;
+        width: 200px;
+    }
+</style>
+
+<body>
+    <ul id="list1">
+        <li>banana</li>
+        <li>teA</li>
+        <li>grapes</li>
+    </ul>
+
+
+    <ul id="list2">
+        <li>three</li>
+        <li>half</li>
+        <li>one</li>
+    </ul>
+    <div id="box">
+
+    </div>
+    <script>
+        var element = document.getElementById("list1").children[2]
+        var copy = element.cloneNode(true)
+        // console.log(copy)
+        document.getElementById("list2").appendChild(copy)
+        document.getElementById("box").appendChild(copy);
+    </script>
+</body>
+
+</html>

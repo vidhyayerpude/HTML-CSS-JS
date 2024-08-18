@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+    <style>
+        #image-container {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            align-items: center;
+            justify-items: center;
+        }
+
+        #image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            align-items: center;
+            justify-items: center;
+        }
+
+        button {
+            /* margin-top: 20px; */
+            /* margin-left: 50%; */
+            margin-left: 500px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            align-items: center;
+            justify-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img id="displayed-image" src="../images/c1.jfif" alt="Default Image">
+    </div>
+    <button id="change-image-button">Change Image</button>
+
+    <script>
+        document.getElementById('change-image-button').addEventListener('click', function() {
+            const imageElement = document.getElementById('displayed-image');
+            imageElement.src = "../images/Designer.png";
+        });
+    </script>
+</body>
+</html> 
